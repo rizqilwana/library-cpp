@@ -1,0 +1,19 @@
+//There is an automatic ticket vending machine that can accept coins of 25, 10, 5 and 1-cent, write a program to input the fare (cents), and calculate the minimum number of coins required.
+#include <iostream>
+using namespace std;
+
+int main() {
+  int money, twentyfive, ten, five, one;
+  cout << "enter the fare amount of money : ";
+  cin >> money;
+  twentyfive = money / 25;
+  ten = (money % 25) / 10;
+  five = (money % 25) % 10 / 5;
+  one = (money % 25) % 10 % 5;
+  cout << "money change for " << money << " dollar\n";
+  cout << "25-dollars: " << twentyfive << '\n';
+  cout << "10-dollars: " << ten << '\n';
+  cout << "5-dollars: " << five << '\n';
+  cout << "1-dollars: " << one << '\n';
+  return 0;
+}
