@@ -1,3 +1,6 @@
+//Input x, output y : y= x²-3x+2
+//Enter the radius (r) of the circle and use the macro constant PI to caiculate the area and circumference (cir) of the circle Output the circle area Tr² (PI*r*r) and circumference 2Tr (2*PI*r)
+
 #include <iostream>
 #define PI 3.14159
 using namespace std;
